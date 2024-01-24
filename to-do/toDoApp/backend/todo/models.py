@@ -5,7 +5,7 @@ class Todo(models.Model):
     memo= models.TextField(blank=True)
     
     #Setting to current Time
-    created= models.DateTimeField(auto_now_add=False)
+    created= models.DateTimeField(auto_now_add=True)
     completed = models.BooleanField(default = False)
     
     # Foreign key, user who posted this

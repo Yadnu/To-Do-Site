@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'todo',
     'rest_framework',
     'api',
+    'rest_framework.authtoken'
     
 ]
 
@@ -103,6 +104,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK={
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
